@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hzbg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8ad9dadc"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_zi"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="7"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:hint="按汉字查询"
+            android:inputType="text"></EditText>
+
+        <ImageView
+            android:id="@+id/ser_zi"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="3"
+            android:src="@drawable/search" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

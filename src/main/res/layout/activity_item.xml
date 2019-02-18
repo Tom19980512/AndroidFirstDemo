@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="141dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/item_layout"
+    android:background="#98d5e2ec">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="140dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tzg" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:hint="测"
+                android:id="@+id/item_zi"
+                android:textSize="30pt"
+                android:textColor="#e0000000"
+                android:gravity="center"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="拼音：" />
+
+                <TextView
+                    android:id="@+id/item_pinyin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:hint="不详"
+                    android:textStyle="bold"
+                    android:textColor="#deff0000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="部首：" />
+
+                <TextView
+                    android:id="@+id/item_bushou"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:hint="不详"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#deff0000" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="笔画数：" />
+                <TextView
+                    android:id="@+id/item_bihua"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:hint="不详"
+                    android:textStyle="bold"
+                    android:textColor="#deff0000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="五笔：" />
+                <TextView
+                    android:id="@+id/item_wubi"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:hint="不详"
+                    android:textStyle="bold"
+                    android:textColor="#deff0000"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000">
+    </LinearLayout>
+</LinearLayout>

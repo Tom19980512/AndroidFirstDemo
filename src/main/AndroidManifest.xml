@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tzg.endgraduationwork">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".XiangQinActivity.BsXiangJie" />
+        <activity android:name=".XiangQinActivity.PyXiangJie" />
+        <activity android:name=".XiangQinActivity.ZiXiangJie" />
+        <activity
+            android:name=".Activity.ZiActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.BsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.PyActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Xiangjie.Xiangjie_zi" />
+        <activity android:name=".Jianjie.Jianjie_zi" />
+        <activity android:name=".Xiangjie.Xiangjie_bs" />
+        <activity android:name=".Jianjie.Jianjie_bs" />
+        <activity android:name=".Xiangjie.Xiangjie_py" />
+        <activity android:name=".Jianjie.Jianjie_py"></activity>
+    </application>
+
+</manifest>
